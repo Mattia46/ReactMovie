@@ -1,6 +1,7 @@
 import React from 'react';
 import { Movie } from './Component/Movie';
 import { AddMovie } from './Component/AddMovie';
+import { Link } from 'react-router';
 
 export class App extends React.Component {
   constructor(){
@@ -48,6 +49,7 @@ export class App extends React.Component {
           get
         </button>
         {movies}
+        <Link to="/add">Add</Link>
       </div>
     )
   }
